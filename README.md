@@ -5,3 +5,12 @@
 ![Docker Image Size](https://img.shields.io/docker/image-size/asimd10/alpine-ansible/latest)
 ![Docker Stars](https://img.shields.io/docker/stars/asimd10/alpine-ansible)
 ## Usage
+
+### Run Playbook
+
+```sh
+docker run -it --rm \
+  -v ${PWD}:/ansible \
+  asimd10/alpine-ansible:latest \
+  ansible-playbook -i inventory playbook.yml
+```
